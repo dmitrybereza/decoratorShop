@@ -115,10 +115,12 @@
   font-size: 3em;
 }
 
+
+
 .itemDesc {
   position: absolute;
   top: 10.4%;
-  height: 68.6%;
+  height: 68.5%;
   width: 85.2%;
   font-size: 2em;
   left: 7.4%;
@@ -127,7 +129,12 @@
   transition: .5s ease;
   background: rgb(31, 31, 31, 0.8);
 }
-
+.itemInfo {
+  height: 180px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
 .add-to-card {
   text-decoration: none;
   margin-left: auto;
