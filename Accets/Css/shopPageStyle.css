@@ -1,0 +1,102 @@
+.itemShop{
+  width: calc(25% - 28px);
+  height: 100%;
+  background: rgb(31, 31, 31, 0.8);
+  position: relative;
+  margin-top: 20px;
+  margin-left: 20px;
+  box-shadow: 0 5px 25px -5px #000000;
+  display: inline-block;
+  text-align: center;
+  color: white;
+}
+
+.itemDesc{
+  position: absolute;
+    top: 11.7%;
+    height: 60.8%;
+    font-size: 1.2vw;
+    width: 85%;
+    left: 7.5%;
+    overflow: auto;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgb(31, 31, 31, 0.8);
+}
+
+.itemName{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.itemImj{
+  width: 100%;
+  display: block;
+  transition: .5s;
+}
+
+.shopImg{
+  width: 100%;
+  padding: 0 7.5%;
+  height: auto;
+}
+
+.itemInfo{
+  height: 90px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.itemPrice{
+  width: 50%;
+}
+
+.add-to-card{
+  text-decoration: none;
+  margin-left: auto;
+  width: 55%;
+  cursor: pointer;
+  background: none;
+  color: #2db29d;
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 7px;
+  text-transform: uppercase;
+  outline: none;
+  transition: .5s;
+}
+
+.objom{
+  color: #2db29d;
+}
+
+.add-to-card:hover{
+  color: white;
+  border: none;
+  background:#2db29d;
+  box-shadow: 0 5px 15px -5px #00000070;
+}
+
+.itemShop:hover .itemDesc{
+  opacity: 1;
+}
+
+@media(orientation:portrait)  {
+.itemShop{
+  width: calc(50% - 28px);
+  margin-top: 30px;
+  height: 100%;
+}
+
+}
+
+.shopMenu{
+  padding-top: 100px;
+  position: relative;
+  padding-bottom: 100px;
+}

@@ -1,0 +1,77 @@
+
+
+
+.mainMenu{
+  padding-top: 50px;
+  position: relative;
+  padding-bottom: 100px;
+  padding-left: 7.5%;
+}
+.mainMenuIten{
+  margin-top: 100px;
+  width: 40%;
+  height: 450px;
+  opacity: 1;
+  border-width: 3px;
+  padding: 10px;
+  border-style: solid;
+  border-color: rgb(215, 191, 64);
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  text-align: center;
+  display: inline-block;
+  transition: .5s
+}
+
+
+.mainMenuIten:hover{
+  border-width: 7px;
+  width: 39.5%;
+  position: relative;
+  margin-top: 95px;
+  height: 480px;
+  margin-left: 3.1%;
+  margin-right: 2.4%;
+  border-color: rgb(215, 191, 64);
+}
+
+.menuHeader{
+  height: 100px;
+  margin-top: 0%;
+  line-height: 100px;
+  width: 100%;
+  opacity: 1;
+  color: white;
+  background: rgb(215, 191, 64, 0.6);
+}
+
+
+.mainMenuIten a{
+  font-size: 3em;
+  display: block;
+  height: 80%;
+  text-align: center;
+}
+
+@media(max-width: 925px){
+  .mainMenuIten{
+    width: 90%;
+    margin-left: 1.2%;
+  }
+  .mainMenuIten:hover{
+    width: 89.5%;
+    margin-left: 1.2%;
+  }
+}
+
+@media (orientation:portrait) {
+
+  .mainMenu{
+    padding-right: 3%;
+  }
+  .mainMenuIten:hover{
+    padding-right: 0%;
+  }
+
+
+}

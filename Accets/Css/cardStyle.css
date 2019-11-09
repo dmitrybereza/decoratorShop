@@ -1,0 +1,163 @@
+.cardList{
+    width: 70%;
+    margin: auto;
+    margin-top: 140px;
+    background: rgb(31, 31, 31, 0.4);
+    box-shadow: 0 5px 15px -5px #000000;
+}
+
+.cardItem{
+ padding: 5px 5px;
+ display: inline-flex;
+ width: 100%;   
+}
+
+.ItemAmountInfo{
+    width: 30%;
+    height: 130px;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    line-height: 130px;
+}
+
+.ItemAmountInfo p{
+    font-size: 2em;
+}
+
+.cardItem img{
+    
+    max-width: 150px;
+}
+
+.sum p{
+    color: white;
+    font-size: 2.5em;
+    padding-left:20px;
+}
+
+.sum{
+    display: inline-flex;
+    position: relative;
+    width: 100%
+}
+
+.sumNum{
+    position: absolute;
+    right: 100px;
+}
+
+.confirmOrderForm{
+    position: relative;
+    padding-bottom: 30px;
+}
+
+::-webkit-input-placeholder{
+    color: white;
+}
+
+.formFields input{ 
+    display: block;
+    margin-top: 30px;
+    height: 3.5em;
+    border: none;
+    width: 90%;
+    margin-left: 5%;
+    background: none;
+}
+
+.ItemButtons{
+    width: 47%;
+    position: relative;
+    margin: auto;
+    justify-content: flex-end;
+    display: inline-flex;
+    line-height: 130px;
+}
+
+.delete-from-card{
+    color: red !important;
+    outline: none;
+    border: 2px solid;
+}
+
+.delete-from-card:hover{
+    color: white !important;
+    border: none;
+    box-shadow: 0 5px 15px -5px #00000070;
+    background: red;
+}
+
+.ItemButtons button{
+    margin-right: 10%;
+    height: 3em;
+    width: 3em;
+    background: none;
+    color: #2db29d;
+    outline: none;
+    transition: .5s;
+    border: 2px solid;
+    margin-top: 45px;
+    border-radius: 50%;
+}
+
+.emptyCard{
+    width: 100%;
+    text-align: center;
+    color: white;
+    height: 50vh;
+    line-height: 50vh;
+    font-size: 3em;
+    
+}
+
+.add-to-card:hover{
+    border: none;
+    color: white;
+    box-shadow: 0 5px 15px -5px #00000070;
+    background: #2db29d;
+}
+
+.delete-one-from-card:hover{
+    border: none;
+    color: white;
+    box-shadow: 0 5px 15px -5px #00000070;
+    background: #2db29d;
+}
+
+
+.ItemButtons p{
+    line-height: 130px;
+    font-size: 2em;
+    color: white;
+    margin-right: 10%;
+}
+
+.content{
+    margin-bottom: 100px;
+}
+
+.ConfirmOrder{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10px;
+    height: 3em;
+    outline: none;
+    border: 2px solid;
+    margin-bottom: 15px; 
+    background: none;
+    color: #2db29d;
+    border-radius: 20px;
+    font-size: 1em;
+    letter-spacing: 2px;
+    transition: .5s;
+    text-transform: uppercase;
+}
+
+.ConfirmOrder:hover{
+    color: white;
+    background: #2db29d;
+    border: none;
+    box-shadow: 0 5px 15px -5px #00000070;
+}
+

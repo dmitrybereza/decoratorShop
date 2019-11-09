@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:300,400,600,800&amp;subset=cyrillic" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/Accets/Js/mainPageScript.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="/Accets/Css/shopPageStyle.css">
+    <link rel="stylesheet" href="/Accets/Css/generaltyle.css">
+    <title></title>
+  </head>
+  <body onload="onload()" style="background: url(Accets/Img/bgbw.jpg)">
+    <div class="header">
+      <div class="logo">
+          <img src="Accets/Img/logo.svg" alt="">
+      </div>
+      <div class="upperMenu">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="portfolioPage.html">Портфолио</a></li>
+          <li><a href="shopPage.html">Каталог</a></li>
+          <li><a href="furniturePage.html">Мебель</a></li>
+          <li><a href="contactsPage.html">Контакты</a></li>
+          <li>
+                <i onclick="openInNewTab('shopcard.html')" class="fa" style="display:inline">&#xf07a;</i>
+                <span class='badge badge-warning' id='lblCartCount'></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="contentContainer">
+      <div class="content">
+        <div class="shopMenu">
+
+
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <h1>Contacts</h1>
+      <div class="bottomContainer">
+        <div class="bottomInfo">
+            <div class="card">
+              <i class="card-icon far fa-envelope"></i>
+              <p>example@gmail.com</p>
+            </div>
+            <div class="card card-phone">
+              <i class="card-icon card-icon-phone fas fa-phone"></i>
+              <p>+38000000000</p>
+              <p>+38000000000</p>
+              <p>+38000000000</p>
+            </div>
+            <div class="card card-map">
+              <i class="card-icon fas fa-map-marker-alt"></i>
+              <p>г. Днепр</p>
+              <p>ул.Выконкомовская 69</p>
+              <p>Пн - пт: 9:00-18:00</p>
+            </div>
+        </div>
+      </div>
+      <h1>Socials</h1>
+      <div class="bottomMedias">
+        <a href="" class="btn">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="btn">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="btn">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="btn">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+    <button id="goTopButton"><i class="fas fa-arrow-up"></i></button>
+  </body>
+</html>
