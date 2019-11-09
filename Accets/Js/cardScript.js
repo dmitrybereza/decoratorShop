@@ -112,16 +112,26 @@ function confirmOrder(){
 	order.detach();
 	out+='<div class ="confirmOrderForm">';
 	out+='<div class ="formFields">';
-	out+='<input class="txtb" type="email" id="email"></input>'
+	out+='<div class="txtb">';
+	out+='<input  type="email" id="email"></input>'
 	out+='<span data-placeholder="Ваш email"></span>';
-	out+='<input class="txtb" id="eFIO"></input>'
+	out+='</div>';
+	out+='<div class="txtb">';
+	out+='<input  id="eFIO"></input>'
 	out+='<span data-placeholder="Фамилия Имя Отчество"></span>';
-	out+='<input class="txtb" type="phone" id="eNum"></input>'
+	out+='</div>';
+	out+='<div class="txtb">';
+	out+='<input type="phone" id="eNum"></input>'
 	out+='<span data-placeholder="Номер телефона"></span>';
-	out+='<input class="txtb" id="eCity"></input>'
+	out+='</div>';
+	out+='<div class="txtb">';
+	out+='<input id="eCity"></input>'
 	out+='<span data-placeholder="Ваш город"></span>';
-	out+='<input class="txtb" id="ePost"></input>'
+	out+='</div>';
+	out+='<div class="txtb">';
+	out+='<input id="ePost"></input>'
 	out+='<span data-placeholder="Ваше отделение Новой Почты"></span>';
+	out+='</div>';
 	out+='<button onclick="sendEmail()" class="ConfirmOrder send-email">Подтвердить заказ</button>';
 	out+='</div>';
 	out+='</div>';
