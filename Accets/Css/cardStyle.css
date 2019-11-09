@@ -238,6 +238,18 @@
         right: 45px;
     }
 
+    .fa-plus {
+        font-size: 3em;
+    }
+
+    .fa-minus {
+        font-size: 3em;
+    }
+
+    .fa-trash{
+        font-size: 3em;
+    }
+
     .sum p {
         color: white;
         font-size: 3.5em;
