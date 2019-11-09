@@ -42,6 +42,7 @@ function onload(){
 }
 
 function sendEmail(){
+	console.log('11!1');
 	var email = $('.email').val();
 	var eFIO = $('.eFIO').val();
 	var eNUM = $('.eNum').val();
