@@ -113,24 +113,24 @@ function confirmOrder(){
 	out+='<div class ="confirmOrderForm">';
 	out+='<div class ="formFields">';
 	out+='<div class="txtb">';
-	out+='<input  type="email" id="email"></input>'
-	out+='<span data-placeholder="Ваш email"></span>';
+	out+='<input placeholder="Ваш email" type="email" id="email"></input>'
+	out+='<span></span>';
 	out+='</div>';
 	out+='<div class="txtb">';
-	out+='<input  id="eFIO"></input>'
-	out+='<span data-placeholder="Фамилия Имя Отчество"></span>';
+	out+='<input placeholder="Фамилия Имя Отчество" id="eFIO"></input>'
+	out+='<span></span>';
 	out+='</div>';
 	out+='<div class="txtb">';
-	out+='<input type="phone" id="eNum"></input>'
-	out+='<span data-placeholder="Номер телефона"></span>';
+	out+='<input placeholder="Номер телефона" type="phone" id="eNum"></input>'
+	out+='<span></span>';
 	out+='</div>';
 	out+='<div class="txtb">';
-	out+='<input id="eCity"></input>'
-	out+='<span data-placeholder="Ваш город"></span>';
+	out+='<input placeholder="Ваш город" id="eCity"></input>'
+	out+='<span></span>';
 	out+='</div>';
-	out+='<div class="txtb">';
-	out+='<input id="ePost"></input>'
-	out+='<span data-placeholder="Ваше отделение Новой Почты"></span>';
+	out+='<div  class="txtb">';
+	out+='<input placeholder="Ваше отделение Новой Почты" id="ePost"></input>'
+	out+='<span></span>';
 	out+='</div>';
 	out+='<button onclick="sendEmail()" class="ConfirmOrder send-email">Подтвердить заказ</button>';
 	out+='</div>';
@@ -235,11 +235,3 @@ function deleteFromCard(){
 	saveCard();
 	showCard();
 }
-
-$(".txtb input").on("focus",function(){
-	$(this).addClass("focus");
-})
-$(".txtb input").on("blur",function(){
-	if($(this).val() == "")
-	$(this).removeClass("focus");
-})
