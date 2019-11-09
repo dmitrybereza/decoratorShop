@@ -180,7 +180,7 @@
     box-shadow: 0 5px 15px -5px #00000070;
 }
 
-@media(orientation:portrait){
+@media(max-width:900px){
 
     .cardItem img {
         max-width: 50%;
