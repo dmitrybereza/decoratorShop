@@ -70,9 +70,8 @@
 .txtb span::before{
     content: attr(data-placeholder);
     position: absolute;
-    top:50%;
+    top:22%;
     width: 90%;
-    padding: 0 5px;
     left:5%;
     color:#adadadad;
 }
