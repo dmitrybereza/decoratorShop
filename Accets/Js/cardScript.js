@@ -109,10 +109,16 @@ function confirmOrder(){
 	out+='<div class ="confirmOrderForm">';
 	out+='<div class ="formFields">';
 	out+='<input placeholder="e-mail"></input>'
+	out+='';
 	out+='<input placeholder="ФИО"></input>'
+	out+='';
 	out+='<input placeholder="Номер телефона"></input>'
+	out+='';
 	out+='<input placeholder="Город"></input>'
+	out+='';
 	out+='<input placeholder="Отделение доставки Новой Почты"></input>'
+	out+='';
+	out+='<p><button class="ConfirmOrder send-email">Подтвердить заказ</button></p>';
 	out+='</div>';
 	out+='</div>';
 	$(out).appendTo('.cardList');
