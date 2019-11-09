@@ -53,7 +53,7 @@
 }
 
 ::-webkit-input-placeholder{
-    color: rgb(253, 234, 234);
+    color: #a79b9b;
 }
 
 .txtb input{ 
@@ -65,7 +65,7 @@
     background: none;
     padding: 0 5px;
     height: 40px;
-}
+} 
 
 .txtb span::before{
     content: attr(data-placeholder);
