@@ -66,6 +66,10 @@
     background: none;
 }
 
+.formFields{
+    border-bottom: 2px solid #ddd;
+}
+
 .ItemButtons{
     width: 47%;
     position: relative;

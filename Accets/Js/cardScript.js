@@ -112,16 +112,16 @@ function confirmOrder(){
 	order.detach();
 	out+='<div class ="confirmOrderForm">';
 	out+='<div class ="formFields">';
-	out+='<input type="email" placeholder="e-mail" id="email"></input>'
-	out+='';
-	out+='<input placeholder="ФИО" id="eFIO"></input>'
-	out+='';
-	out+='<input type="number" placeholder="Номер телефона" id="eNum"></input>'
-	out+='';
-	out+='<input placeholder="Город" id="eCity"></input>'
-	out+='';
-	out+='<input placeholder="Отделение доставки Новой Почты" id="ePost"></input>'
-	out+='';
+	out+='<input type="email" id="email"></input>'
+	out+='<span data-placeholder="Ваш email"></span>';
+	out+='<input id="eFIO"></input>'
+	out+='<span data-placeholder="Фамилия Имя Отчество"></span>';
+	out+='<input type="phone" id="eNum"></input>'
+	out+='<span data-placeholder="Номер телефона"></span>';
+	out+='<input id="eCity"></input>'
+	out+='<span data-placeholder="Ваш город"></span>';
+	out+='<input id="ePost"></input>'
+	out+='<span data-placeholder="Ваше отделение Новой Почты"></span>';
 	out+='<button onclick="sendEmail()" class="ConfirmOrder send-email">Подтвердить заказ</button>';
 	out+='</div>';
 	out+='</div>';
