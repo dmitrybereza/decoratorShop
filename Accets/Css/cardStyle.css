@@ -78,7 +78,7 @@
     color:#adadadad;
 }
 
-txtb span::after{
+.txtb span::after{
     top:-30%;
 }
 
