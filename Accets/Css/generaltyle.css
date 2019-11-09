@@ -245,9 +245,16 @@ a{
 
   .headerNew{
     height: 120px;
-    background-color: rgb(215, 191, 64, 0.85);
+    background-color: linear-gradient(#31313180,#31313100);
   }
 
+  .logoNew{
+    padding-top: 30px;
+  }
+  .content {
+    width: 100%;
+    min-height: 50vw;
+  }
   .fa {
     font-size: 48px;
   }
