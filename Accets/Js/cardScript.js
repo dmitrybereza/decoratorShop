@@ -41,22 +41,6 @@ function onload(){
 	loadCount();
 }
 
-function sendEmail(){
-	console.log('11!1');
-	var email = $('.email').val();
-	var eFIO = $('.eFIO').val();
-	var eNUM = $('.eNum').val();
-	var eCity = $('.eCity').val();
-	var ePost = $('.ePost').val();
-
-	if(email != undefined && eFIO != undefined && eNUM != undefined && eCity != undefined && ePost != undefined){
-
-	}
-	else{
-		alert('Заполните все поля!');
-	}
-}
-
 function loadCard(){
 	if(localStorage.getItem('card')){
 		card = JSON.parse(localStorage.getItem('card'));
@@ -138,6 +122,22 @@ function confirmOrder(){
 	out+='</div>';
 	out+='</div>';
 	$(out).appendTo('.cardList');
+}
+
+function sendEmail(){
+	console.log('11!1');
+	var email = $('.email').val();
+	var eFIO = $('.eFIO').val();
+	var eNUM = $('.eNum').val();
+	var eCity = $('.eCity').val();
+	var ePost = $('.ePost').val();
+
+	if(email != undefined && eFIO != undefined && eNUM != undefined && eCity != undefined && ePost != undefined){
+
+	}
+	else{
+		alert('Заполните все поля!');
+	}
 }
 
 function addToCardFromCard(){
