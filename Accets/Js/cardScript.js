@@ -144,9 +144,14 @@ function sendEmail(){
 				"card" : card
 			},
 			function(data){
-				if(data ==1){
-					var win = window.open(index.html,'_self');
+				if(data == 1){
+					var win = window.open('index.html','_self');
 					win.focus();
+					count = 0;
+					delete card;
+					saveCard();
+					localStorage.setItem('counter',count);
+					document.getElementById("lblCartCount").textContent = count;
 					alert('Заказ принят в обработку, ожидайте звонка!')	
 				}
 				else{
