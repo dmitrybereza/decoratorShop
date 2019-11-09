@@ -43,11 +43,18 @@ function onload(){
 }
 
 function sendEmail(){
-	var emane = $('.email').val();
+	var email = $('.email').val();
 	var eFIO = $('.eFIO').val();
 	var eNUM = $('.eNum').val();
 	var eCity = $('.eCity').val();
 	var ePost = $('.ePost').val();
+
+	if(email != '' && eFIO != '' && eNUM != '' && eCity != '' && ePost != ''){
+
+	}
+	else{
+		alert('Заполните все поля!');
+	}
 }
 
 function loadCard(){
@@ -117,17 +124,17 @@ function confirmOrder(){
 	order.detach();
 	out+='<div class ="confirmOrderForm">';
 	out+='<div class ="formFields">';
-	out+='<input placeholder="e-mail" id="email" required></input>'
+	out+='<input type="email" placeholder="e-mail" id="email"></input>'
 	out+='';
-	out+='<input placeholder="ФИО" id="eFIO" required></input>'
+	out+='<input placeholder="ФИО" id="eFIO"></input>'
 	out+='';
-	out+='<input placeholder="Номер телефона" id="eNum" required></input>'
+	out+='<input type="phone" placeholder="Номер телефона" id="eNum"></input>'
 	out+='';
-	out+='<input placeholder="Город" id="eCity" required></input>'
+	out+='<input placeholder="Город" id="eCity"></input>'
 	out+='';
-	out+='<input placeholder="Отделение доставки Новой Почты" id="ePost" required></input>'
+	out+='<input placeholder="Отделение доставки Новой Почты" id="ePost"></input>'
 	out+='';
-	out+='<input type="submit" class="ConfirmOrder send-email" value="Подтвердить заказ"</input>';
+	out+='<p><button class="ConfirmOrder send-email">Подтвердить заказ</button></p>';
 	out+='</div>';
 	out+='</div>';
 	$(out).appendTo('.cardList');
