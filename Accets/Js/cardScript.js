@@ -117,7 +117,7 @@ function confirmOrder(){
 	order.detach();
 	out+='<div class ="confirmOrderForm">';
 	out+='<div class ="formFields">';
-	out+='<input placeholder="e-mail id="email" required"></input>'
+	out+='<input placeholder="e-mail" id="email" required></input>'
 	out+='';
 	out+='<input placeholder="ФИО" id="eFIO" required></input>'
 	out+='';
@@ -127,7 +127,7 @@ function confirmOrder(){
 	out+='';
 	out+='<input placeholder="Отделение доставки Новой Почты" id="ePost" required></input>'
 	out+='';
-	out+='<p><input type="submit" class="ConfirmOrder send-email">Подтвердить заказ</input></p>';
+	out+='<input type="submit" class="ConfirmOrder send-email" value="Подтвердить заказ"</input>';
 	out+='</div>';
 	out+='</div>';
 	$(out).appendTo('.cardList');
