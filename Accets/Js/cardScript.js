@@ -144,7 +144,14 @@ function sendEmail(){
 				"card" : card
 			},
 			function(data){
-				console.log(data)
+				if(data ==1){
+					var win = window.open(index.html,'_self');
+					win.focus();
+					alert('Заказ принят в обработку, ожидайте звонка!')	
+				}
+				else{
+					alert('Повторите заказ!');
+				}
 			}
 		);
 	}
