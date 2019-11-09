@@ -193,7 +193,7 @@
         color: white;
         margin-right: 7%;
     }
-    
+
     .ItemButtons {
         width: 50%;
         position: absolute;
@@ -217,6 +217,31 @@
         margin-top: 45px;
         border-radius: 50%;
     }
+    .ConfirmOrder {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 30px;
+        height: 3em;
+        outline: none;
+        border: 2px solid;
+        margin-bottom: 30px;
+        background: none;
+        color: #2db29d;
+        border-radius: 100px;
+        font-size: 2em;
+        letter-spacing: 2px;
+        transition: .5s;
+        text-transform: uppercase;
+    }
+    .sumNum {
+        position: absolute;
+        right: 45px;
+    }
 
+    .sum p {
+        color: white;
+        font-size: 3.5em;
+        padding-left: 80px;
+    }
 
 }
