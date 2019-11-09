@@ -53,30 +53,28 @@
 }
 
 ::-webkit-input-placeholder{
-    color: white;
+    color: rgb(253, 234, 234);
 }
 
-.formFields input{ 
-    display: block;
-    margin-top: 30px;
-    height: 3.5em;
-    font-size: 2em;
-    outline: none;
+.txtb input{ 
+    font-size: 15px;
+    color:white;
     border: none;
-    color: white;
-    padding: 0 5px;
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
+    outline:none;
     background: none;
+    padding: 0 5px;
+    height: 40px;
 }
 
-.formFields span::before{
+.txtb span::before{
     content: attr(data-placeholder);
 }
 
 .txtb{
     border-bottom: 2px solid #adadad !important;
     margin: 5% 0;
+    position: relative;
 }
 
 .ItemButtons{
