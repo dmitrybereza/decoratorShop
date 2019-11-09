@@ -18,7 +18,7 @@ $("document").ready(function($){
   var nav3 = $('.upperMenu');
   var nav4 = $('.badge');
 	var nav5 = $('.logo');
-	console.log("hi");
+	var nav6 =$('.fa');
   var btn = $('#goTopButton');
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 15) {
@@ -27,12 +27,14 @@ $("document").ready(function($){
       nav3.addClass("upperMenuNew")
       nav4.addClass("badgeNew")
 			nav5.addClass("logoNew")
+			nav6.addClass("faNew");
 		} else {
 			nav.removeClass("headerNew")
       nav.removeClass("contentContainerNew")
       nav3.removeClass("upperMenuNew")
       nav4.removeClass("badgeNew")
 			nav5.removeClass("logoNew")
+			nav6.removeClass("faNew");
 		}
     if($(this).scrollTop() > 100){
           $('#goTopButton').fadeIn();

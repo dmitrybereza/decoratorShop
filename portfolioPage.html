@@ -15,19 +15,26 @@
       <div class="logo">
         <img src="Accets/Img/logo.svg" alt="">
       </div>
+      <input type="checkbox" id="chk">
+        <label for="chk" class="showMenuButton">
+          <i class="fas fa-ellipsis-h"></i>
+        </label>
       <div class="upperMenu">
         <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="portfolioPage.html">Портфолио</a></li>
-          <li><a href="shopPage.html">Каталог</a></li>
-          <li><a href="furniturePage.html">Мебель</a></li>
-          <li><a href="contactsPage.html">Контакты</a></li>
-          <li>
-            <i class="fa" onclick="openInNewTab('shopcard.html')" style="display:inline">&#xf07a;</i>
-            <span class='badge badge-warning' id='lblCartCount'> 0 </span>
-          </li>
+          <a href="index.html">Главная</a></li>
+          <a href="portfolioPage.html">Портфолио</a></li>
+          <a href="shopPage.html">Каталог</a></li>
+          <a href="furniturePage.html">Мебель</a></li>
+          <a href="contactsPage.html">Контакты</a></li>
+            <input type="checkbox" id="chk">
+        <label for="chk" class="hideMenuButton">
+          <i class="fas fa-times"></i>
+        </label>
         </ul>
       </div>
+            <i onclick="openInNewTab('shopcard.html')" class="fa" style="display:inline">&#xf07a;
+            <span class='badge badge-warning' id='lblCartCount'> 0 </span></i>
+      
     </div>
     <div class="contentContainer">
       <div class="content" style="background: url(Accets/Img/bgbw.jpg)">
