@@ -47,7 +47,11 @@ function loadCard(){
 		showCard();
 	}
 	else{
-		$('.cardList').html('Корзина пуста!')
+		out='';
+			out+='<div class="emptyCard">';
+			out+='<p>Корзина пустая</p>';
+			out+='</div>';
+			$('.cardList').html(out);
 	}
 }
 
@@ -147,11 +151,7 @@ function sendEmail(){
 				if(data == 1){
 					var win = window.open('index.html','_self');
 					win.focus();
-					count = 0;
-					delete card;
-					saveCard();
-					localStorage.setItem('counter',count);
-					document.getElementById("lblCartCount").textContent = count;
+					localStorage.clear();
 					alert('Заказ принят в обработку, ожидайте звонка!')	
 				}
 				else{
