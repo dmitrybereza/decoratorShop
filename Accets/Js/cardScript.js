@@ -133,7 +133,20 @@ function sendEmail(){
 	var ePost = $('#ePost').val();
 
 	if(email != '' && eFIO != '' && eNUM != '' && eCity != '' && ePost != ''){
-
+		$.post(
+			"core/email.php",
+			{
+				"eFIO" : eFIO,
+				"email" : email,
+				"eNUM" : eNUM,
+				"eCity" : eCity,
+				"ePost" : ePost,
+				"card" : card
+			},
+			function(data){
+				console.log(data)
+			}
+		);
 	}
 	else{
 		alert('Заполните все поля!');
