@@ -79,8 +79,21 @@
     color:#adadadad;
 }
 
-.txtb input:hover span{
-    top:-40%;
+.txtb span::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #449a8d;
+    transition: .5s;
+}
+
+.focus + span::before{
+    top: -5px;
+}
+
+.focus + span::after{
+    width:100%;
 }
 
 .txtb{
