@@ -105,6 +105,10 @@
     border: 2px solid !important;   
 }
 
+.send-email:hover{
+    border: none !important;   
+}
+
 .emptyCard{
     width: 100%;
     text-align: center;
