@@ -101,6 +101,10 @@
     border-radius: 50%;
 }
 
+.send-email{
+    border: 2px solid !important;   
+}
+
 .emptyCard{
     width: 100%;
     text-align: center;
