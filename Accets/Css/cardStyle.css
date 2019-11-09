@@ -60,7 +60,7 @@
     font-size: 15px;
     color:white;
     border: none;
-    width: 100%;
+    width: 90%;
     outline:none;
     background: none;
     padding: 0 5px;
@@ -71,6 +71,8 @@
     content: attr(data-placeholder);
     position: absolute;
     top:50%;
+    width: 90%;
+    padding: 0 5px;
     left:5%;
     color:#adadadad;
 }
