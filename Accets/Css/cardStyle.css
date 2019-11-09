@@ -193,6 +193,17 @@
         color: white;
         margin-right: 7%;
     }
+    
+    .ItemButtons {
+        width: 50%;
+        position: absolute;
+        margin: auto;
+        left: 50%;
+        top: 130px;
+        justify-content: flex-end;
+        display: inline-flex;
+        line-height: 130px;
+    }
 
     .ItemButtons button {
         margin-right: 7%;
