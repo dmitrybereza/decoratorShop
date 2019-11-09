@@ -80,7 +80,6 @@ function showCard()
 			out+=`<button onclick="incrShopCard()" data-id ="${id}" class="add-to-card"><i class="fas fa-plus"></i></button>`;
 			out+=`<p>${card[id]}</p>`;
 			out+=`<button onclick="decrShopCard()" data-id ="${id}" class ="delete-one-from-card"><i class="fas fa-minus"></i></button>`;
-			out+='<p>'+card[id]*goods[id].cost+'</p>';
 			sum+=card[id]*goods[id].cost;
 			out+=`<button data-id ="${id}" class ="delete-from-card"><i class="fas fa-trash"></i></button>`;
 			out+='</div>';
