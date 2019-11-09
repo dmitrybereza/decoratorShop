@@ -88,11 +88,63 @@
 
 @media(orientation:portrait)  {
 .itemShop{
-  width: calc(100% - 28px);
+  width: calc(100% - 50px);
   margin-top: 30px;
   height: 100%;
 }
 
+.itemName {
+  width: 100%;
+  height: 100%;
+  line-height: 3em;
+  font-size: 2em;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.itemImj {
+  width: 100%;
+  display: block;
+  transition: .5s;
+}
+
+.itemPrice {
+  width: 50%;
+  font-size: 3em;
+}
+
+.itemDesc {
+  position: absolute;
+  top: 10.4%;
+  height: 68.6%;
+  width: 85.2%;
+  font-size: 2em;
+  left: 7.4%;
+  overflow: auto;
+  opacity: 0;
+  transition: .5s ease;
+  background: rgb(31, 31, 31, 0.8);
+}
+
+.add-to-card {
+  text-decoration: none;
+  margin-left: auto;
+  width: 55%;
+  cursor: pointer;
+  background: none;
+  color: #2db29d;
+  font-size: 2em;
+  margin-right: 60px;
+  border: 2px solid;
+  border-radius: 65px;
+  padding: 7px;
+  height: 75px;
+  text-transform: uppercase;
+  outline: none;
+  transition: .5s;
+}
 }
 
 .shopMenu{
