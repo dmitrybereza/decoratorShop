@@ -88,7 +88,7 @@
 
 @media(orientation:portrait)  {
 .itemShop{
-  width: calc(50% - 28px);
+  width: calc(100% - 28px);
   margin-top: 30px;
   height: 100%;
 }
