@@ -86,7 +86,7 @@
   opacity: 1;
 }
 
-@media(orientation:portrait)  {
+@media screen and (max-aspect-ratio: 13/9) {
 .itemShop{
   width: calc(100% - 50px);
   margin-top: 30px;
