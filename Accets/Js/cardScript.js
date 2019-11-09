@@ -39,6 +39,15 @@ $("document").ready(function($){
 function onload(){
 	loadCard();
 	loadCount();
+	$('.send-email').on('click',sendEmail);
+}
+
+function sendEmail(){
+	var emane = $('.email').val();
+	var eFIO = $('.eFIO').val();
+	var eNUM = $('.eNum').val();
+	var eCity = $('.eCity').val();
+	var ePost = $('.ePost').val();
 }
 
 function loadCard(){
@@ -108,15 +117,15 @@ function confirmOrder(){
 	order.detach();
 	out+='<div class ="confirmOrderForm">';
 	out+='<div class ="formFields">';
-	out+='<input placeholder="e-mail"></input>'
+	out+='<input placeholder="e-mail id="email" important"></input>'
 	out+='';
-	out+='<input placeholder="ФИО"></input>'
+	out+='<input placeholder="ФИО" id="eFIO" important></input>'
 	out+='';
-	out+='<input placeholder="Номер телефона"></input>'
+	out+='<input placeholder="Номер телефона" id="eNum" important></input>'
 	out+='';
-	out+='<input placeholder="Город"></input>'
+	out+='<input placeholder="Город" id="eCity" important></input>'
 	out+='';
-	out+='<input placeholder="Отделение доставки Новой Почты"></input>'
+	out+='<input placeholder="Отделение доставки Новой Почты" id="ePost" important></input>'
 	out+='';
 	out+='<p><button class="ConfirmOrder send-email">Подтвердить заказ</button></p>';
 	out+='</div>';
