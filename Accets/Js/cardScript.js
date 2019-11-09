@@ -73,7 +73,8 @@ function showCard()
 			out+='<div class ="ItemNameCard">';
 			out+='</div>';
             out+='<div class ="ItemAmountInfo">';
-            out+='<p>'+goods[id].name+'</p>';
+			out+='<p>'+goods[id].name+'</p>';
+			out+='<p>'+card[id]*goods[id].cost+' Грн</p>';
             out+='</div>'
             out+='<div class ="ItemButtons">';
 			out+=`<button onclick="incrShopCard()" data-id ="${id}" class="add-to-card"><i class="fas fa-plus"></i></button>`;
