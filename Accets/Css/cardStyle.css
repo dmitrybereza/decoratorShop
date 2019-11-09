@@ -69,6 +69,10 @@
 
 .txtb span::before{
     content: attr(data-placeholder);
+    position: absolute;
+    top:50%;
+    left:5%;
+    color:#adadadad;
 }
 
 .txtb{
