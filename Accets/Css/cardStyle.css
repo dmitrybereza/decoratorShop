@@ -161,3 +161,18 @@
     box-shadow: 0 5px 15px -5px #00000070;
 }
 
+@media(orientation:portrait){
+
+    .cardItem img {
+        max-width: 50%;
+    }
+
+    .cardItem {
+        padding: 5px 5px;
+        position: relative;
+        width: 100%;
+    }
+
+
+
+}
