@@ -125,14 +125,14 @@ function confirmOrder(){
 }
 
 function sendEmail(){
-	console.log('11!1');
+	console.log('11');
 	var email = $('#email').val();
 	var eFIO = $('#eFIO').val();
 	var eNUM = $('#eNum').val();
 	var eCity = $('#eCity').val();
 	var ePost = $('#ePost').val();
 
-	if(email != undefined && eFIO != undefined && eNUM != undefined && eCity != undefined && ePost != undefined){
+	if(email != '' && eFIO != '' && eNUM != '' && eCity != '' && ePost != ''){
 
 	}
 	else{
