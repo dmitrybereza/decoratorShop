@@ -70,16 +70,16 @@
 .txtb span::before{
     content: attr(data-placeholder);
     position: absolute;
-    top:-18%;
+    top:-12%;
     width: 90%;
-    font-size:2.4em;
+    font-size:2.3em;
     left:5px;
     transition: .5s;
     color:#adadadad;
 }
 
-.txtb span::after{
-    top:-30%;
+.txtb input:hover span{
+    top:-40%;
 }
 
 .txtb{
