@@ -60,14 +60,23 @@
     display: block;
     margin-top: 30px;
     height: 3.5em;
+    font-size: 2em;
+    outline: none;
     border: none;
+    color: white;
+    padding: 0 5px;
     width: 90%;
     margin-left: 5%;
     background: none;
 }
 
+.formFields span::before{
+    content: attr(data-placeholder);
+}
+
 .txtb{
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #adadad !important;
+    margin: 5% 0;
 }
 
 .ItemButtons{
