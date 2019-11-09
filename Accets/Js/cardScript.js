@@ -49,7 +49,7 @@ function sendEmail(){
 	var eCity = $('.eCity').val();
 	var ePost = $('.ePost').val();
 
-	if(email != '' && eFIO != '' && eNUM != '' && eCity != '' && ePost != ''){
+	if(email != undefined && eFIO != undefined && eNUM != undefined && eCity != undefined && ePost != undefined){
 
 	}
 	else{
@@ -126,7 +126,7 @@ function confirmOrder(){
 	out+='<div class ="formFields">';
 	out+='<input type="email" placeholder="e-mail" id="email"></input>'
 	out+='';
-	out+='<input type="password" placeholder="ФИО" id="eFIO"></input>'
+	out+='<input placeholder="ФИО" id="eFIO"></input>'
 	out+='';
 	out+='<input type="number" placeholder="Номер телефона" id="eNum"></input>'
 	out+='';
