@@ -134,7 +134,7 @@ function sendEmail(){
 
 	if(email != '' && eFIO != '' && eNUM != '' && eCity != '' && ePost != ''){
 		$.post(
-			"core/email.php",
+			"core/mail.php",
 			{
 				"eFIO" : eFIO,
 				"email" : email,
