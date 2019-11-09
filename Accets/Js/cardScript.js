@@ -126,9 +126,9 @@ function confirmOrder(){
 	out+='<div class ="formFields">';
 	out+='<input type="email" placeholder="e-mail" id="email"></input>'
 	out+='';
-	out+='<input placeholder="ФИО" id="eFIO"></input>'
+	out+='<input type="password" placeholder="ФИО" id="eFIO"></input>'
 	out+='';
-	out+='<input type="phone" placeholder="Номер телефона" id="eNum"></input>'
+	out+='<input type="number" placeholder="Номер телефона" id="eNum"></input>'
 	out+='';
 	out+='<input placeholder="Город" id="eCity"></input>'
 	out+='';
