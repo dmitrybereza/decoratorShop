@@ -118,7 +118,7 @@ function confirmOrder(){
 	out+='';
 	out+='<input placeholder="Отделение доставки Новой Почты" id="ePost"></input>'
 	out+='';
-	out+='<p><button onclick="sendEmail" class="send-email">Подтвердить заказ</button></p>';
+	out+='<button onclick="sendEmail()" class="send-email">Подтвердить заказ</button>';
 	out+='</div>';
 	out+='</div>';
 	$(out).appendTo('.cardList');
