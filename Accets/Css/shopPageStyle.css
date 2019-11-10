@@ -93,6 +93,12 @@
   height: 100%;
 }
 
+.shopMenu {
+  padding-top: 200px !important;
+  position: relative;
+  padding-bottom: 100px;
+}
+
 .itemName {
   width: 100%;
   height: 100%;

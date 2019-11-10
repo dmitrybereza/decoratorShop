@@ -336,7 +336,11 @@ a{
 @media screen and (max-aspect-ratio: 13/9) {
   .header{
     height: 120px;
-    padding-top: 20px;
+    padding-top: 50px;
+  }
+
+  .logoheader{
+    height:70px;
   }
 
   .showMenuButton, .hideMenuButton{
@@ -353,7 +357,7 @@ a{
     top:0;
     z-index:0;
     transition:.7s;
-    padding:80px 0;
+    padding:100px 0;
     text-align: center;
   }
 

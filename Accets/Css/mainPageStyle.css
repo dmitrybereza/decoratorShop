@@ -1,77 +1,164 @@
-
-
-
 .mainMenu{
-  padding-top: 50px;
+  height: 100%;
   position: relative;
-  padding-bottom: 100px;
-  padding-left: 7.5%;
-}
-.mainMenuIten{
-  margin-top: 100px;
-  width: 40%;
-  height: 450px;
-  opacity: 1;
-  border-width: 3px;
-  padding: 10px;
-  border-style: solid;
-  border-color: rgb(215, 191, 64);
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-  text-align: center;
-  display: inline-block;
-  transition: .5s
 }
 
+.mainMenu1{
+  margin-top: 50px;
+  display: flex;
+  margin-left: 130px;
+}
 
-.mainMenuIten:hover{
-  border-width: 7px;
-  width: 39.5%;
+.mainMenu2{
+  display: flex;
+   margin-left: 130px;
+}
+
+.Portfolio{
+  height: 400px;
+  width: calc(50% - 130px);
   position: relative;
-  margin-top: 95px;
-  height: 480px;
-  margin-left: 3.1%;
-  margin-right: 2.4%;
-  border-color: rgb(215, 191, 64);
+  overflow: hidden;
+  margin: 30px;
 }
 
-.menuHeader{
-  height: 100px;
-  margin-top: 0%;
-  line-height: 100px;
+.Portfolio a{
   width: 100%;
-  opacity: 1;
-  color: white;
-  background: rgb(215, 191, 64, 0.6);
-}
-
-
-.mainMenuIten a{
-  font-size: 3em;
+  height: 100%;
   display: block;
-  height: 80%;
+}
+
+ .mainMenu img{
+  width:100%;
+  cursor: pointer;
+  height: 100%;
+  transition: .5s;
+}
+
+.startImg{
+  width: 100%;
+  background: url(../Img/start3.jpg) no-repeat;
+  background-size: cover;
+  height: 90vh;
+  position:relative;
+  overflow: hidden;
+}
+
+.mainLogo{
+  height: 100px;
+}
+.bigLogo{
+  position: absolute;
+  background:rgb(31, 31, 31, 0.8);
+  padding:25px;
+  border-radius: 10px;
+  top:40%;
+  left:30%;
+}
+
+.About{
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  width: calc(50% - 130px);
+  margin: 30px;
+}
+
+.Furniture{
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  width: calc(50% - 130px);
+  margin: 30px;
+}
+
+.Shop{
+  height: 400px;
+  position: relative;
+  margin: 30px;
+  overflow: hidden;
+  width: calc(50% - 130px);
+}
+
+.itemName{
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  font-size:2em;
+  line-height: 100px;
   text-align: center;
+  width: 100%;
+  transition: .5s;
+  background:rgb(31, 31, 31, 0.8);
 }
 
-@media(max-width: 925px){
-  .mainMenuIten{
-    width: 90%;
-    margin-left: 1.2%;
-  }
-  .mainMenuIten:hover{
-    width: 89.5%;
-    margin-left: 1.2%;
-  }
+.mainMenuItem:hover img{
+  transform: scale(1.1);
 }
 
-@media (orientation:portrait) {
-
-  .mainMenu{
-    padding-right: 3%;
-  }
-  .mainMenuIten:hover{
-    padding-right: 0%;
+@media screen and (max-aspect-ratio: 13/9){
+  .mainMenu1{
+    margin-top: 150px;
+    display: block;
+    margin-left: 15%;
   }
 
+  .startImg{
+    width: 100%;
+    background: url(../Img/start2.jpg) no-repeat;
+    background-size: cover;
+    position:relative;
+    overflow: hidden;
+  }
+  
+.mainLogo{
+  height: 150px;
+}
 
+  .bigLogo{
+    position: absolute;
+    background:rgb(31, 31, 31, 0.8);
+    padding:25px;
+    border-radius: 10px;
+    top:40%;
+    left:7.5%;
+  }
+
+  .mainMenu2{
+    display: block;
+     margin-left: 15%;
+     margin-bottom: 50px;
+  }
+  
+  .Portfolio{
+    height: 400px;
+    width: 75%;
+    position: relative;
+    overflow: hidden;
+    margin: 30px;
+  }
+
+  .About{
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    width: 75%;
+    margin: 30px;
+  }
+  
+  .Furniture{
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    width: 75%;
+    margin: 30px;
+  }
+  
+  .Shop{
+    height: 400px;
+    position: relative;
+    margin: 30px;
+    overflow: hidden;
+    width: 75%;
+  }
 }
