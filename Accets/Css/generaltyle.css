@@ -48,7 +48,7 @@ a{
   float:right;
   line-height: 100px;
   display: inline-flex;
-  right:10%;
+  right:15%;
   position:absolute;
   transition: .5s;
 }
