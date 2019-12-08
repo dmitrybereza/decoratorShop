@@ -1,0 +1,18 @@
+.categoryList{
+    display: flex;
+    width: 100vw;
+    margin-top: 100px;
+    position: relative;
+}
+
+.content{
+    display: flex;
+}
+
+.category{
+height: 300px;
+width: calc(20% - 20px);
+position: relative;
+margin: 20px;
+background: red;
+}

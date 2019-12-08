@@ -19,7 +19,6 @@ $("document").ready(function($){
   var nav4 = $('.badge');
 	var nav5 = $('.logo');
 	var nav6 =$('.fa');
-  var btn = $('#goTopButton');
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 15) {
 			nav.addClass("headerNew")
@@ -42,36 +41,88 @@ $("document").ready(function($){
         $('#goTopButton').fadeOut();
     }
 	});
-  btn.on('click', function(e) {
-    e.preventDefault();
+	$('#goTopButton').on('click', function(e) {
+	e.preventDefault()
     $('html, body').animate({scrollTop:0}, 800)
   });
 
+  $(".arrowDown").on('click',function(e){
+	e.preventDefault();
+	var top = $('#startmenu').offset().top;
+	$('html, body').animate({scrollTop:top}, 800)
+  })
+
+  $(".toContacts").on('click',function(e){
+	e.preventDefault();
+	var top = $('#contactsStart').offset().top;
+	$('html, body').animate({scrollTop:top}, 800)
+  })
+
 });
 
+var startIndex;
+var endIndex;
 
 function init() {
-$.getJSON("goods.json", shopMenu);
+	var type = localStorage.getItem('type')
+	if(type =='decPlaster'){
+		startIndex=0;
+		endIndex=1000;
+		$.getJSON("goods.json", shopMenu);
+		
+	}
+	else if (type == 'marmorino') {
+		startIndex=1000;
+		endIndex=2000;
+		$.getJSON("goods2.json", shopMenu);
+		
+	} 
+	else if(type == 'azure'){
+		startIndex=2000;
+		endIndex=3000;
+		$.getJSON("goods3.json", shopMenu);
+		
+	}
+	else if(type == 'paint'){
+		startIndex=3000;
+		endIndex=4000;
+		$.getJSON("goods4.json", shopMenu);
+		
+	}
+	else{
+		startIndex=4000;
+		endIndex=5000;
+		$.getJSON("goods5.json", shopMenu);
+		
+	}
 }
 
 function shopMenu(data){
-  console.log("hi");
+	var temp = data;
   var out='';
-  for (var key in data) {
-		out+=' <div class="itemShop">';
-		out+='<div class="itemName"><p>' + data[key].name + '</p></div>';
-		out+='<div class="itemImj">';
-		out+='<img src="Accets/Img/' + data[key].img + '" alt="" class="shopImg">';
-		out+='</div>';
-		out+='<div class="itemDesc">';
-		out+='<p>'+ data[key].description +'</p><div class="objom">';
-		out+='<p>'+data[key].value +'</p></div>';
-		out+='</div>';
-		out+='<div class="itemInfo">';
-		out+='<div class="itemPrice">'+data[key].cost +' Грн</div>';
-		out+=`<button onclick="incrShopCard()" data-id ="${key}" class="add-to-card"type="button" name="button">В корзину</button>`;
-		out+='</div>';
-		out+='</div>';
+  console.log(temp)
+  for (let i = startIndex; i < endIndex; i++) {
+	  key = i
+	  if(i<1000){
+		  var key="000"+i;
+		}
+	if(temp[key] == undefined){
+		continue;
+	}
+	out+=' <div class="itemShop">';
+	out+='<div class="itemName"><p>' + temp[key].name + '</p></div>';
+	out+='<div class="itemImj">';
+	out+='<img src="Accets/Img/' + temp[key].img + '" alt="" class="shopImg">';
+	out+='</div>';
+	out+='<div class="itemDesc">';
+	out+='<p>'+ temp[key].description +'</p><div class="objom">';
+	out+='<p>'+temp[key].value +'</p></div>';
+	out+='</div>';
+	out+='<div class="itemInfo">';
+	out+='<div class="itemPrice">'+temp[key].cost +' Грн</div>';
+	out+=`<button onclick="incrShopCard()" data-id ="${key}" class="add-to-card"type="button" name="button">В корзину</button>`;
+	out+='</div>';
+	out+='</div>';
   }
   document.getElementsByClassName("shopMenu")[0].innerHTML=out;
 	$('.add-to-card').on('click', addToCard);
@@ -119,3 +170,28 @@ function incrShopCard(){
 	document.getElementById("lblCartCount").textContent = count;
 }
 
+var typeSelected;
+function decPlasterClick(){
+	typeSelected = "decPlaster"
+	localStorage.setItem('type',typeSelected);
+}
+
+function  marmorinoClick(){
+	typeSelected = "marmorino"
+	localStorage.setItem('type',typeSelected);
+}
+
+function varnishClick(){
+	typeSelected = "varnish"
+	localStorage.setItem('type',typeSelected);
+}
+
+function azureClick(){
+	typeSelected = "azure"
+	localStorage.setItem('type',typeSelected);
+}
+
+function  paintClick(){
+	typeSelected = "paint"
+	localStorage.setItem('type',typeSelected);
+}

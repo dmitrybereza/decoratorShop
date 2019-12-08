@@ -44,6 +44,10 @@ a{
   margin-right: 40px;
 }
 
+.upperMenu a:hover {
+  color:#2db29d;
+}
+
 .upperMenu{
   float:right;
   line-height: 100px;
@@ -74,6 +78,9 @@ a{
   position: absolute;
   right:0;
   font-size:3em;
+}
+.showMenuButton:hover{
+  color:#2db29d;
 }
 
 .showMenuButton, .hideMenuButton{
@@ -106,6 +113,10 @@ a{
   line-height: 100px;
   margin-right:80px;
   transition: .5s;
+}
+
+.fa:hover{
+  color:#2db29d;
 }
 
 .faNew{
@@ -286,6 +297,30 @@ a{
     display:block;
   }
 
+  .faNew{
+    line-height: 100px;
+  }
+  
+  .upperMenuNew a{
+    line-height: 100px;
+  }
+
+  .badge{
+    padding-left: 14px;
+    padding-right: 14px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 18px;
+    line-height: 80px;
+  }
+  .headerNew{
+    height: 100px;
+  }
+  .logoNew{
+    padding-top: 30px;
+  }
+
+
   .upperMenu{
     position: fixed;
     width: 100%;
@@ -406,7 +441,7 @@ a{
   }
   .content {
     width: 100%;
-    min-height: 50vw;
+    min-height: 70vw;
   }
   .fa {
     font-size: 48px;

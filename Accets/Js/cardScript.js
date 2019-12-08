@@ -7,6 +7,7 @@ $("document").ready(function($){
   var nav3 = $('.upperMenu');
   var nav4 = $('.badge');
 	var nav5 = $('.logo');
+	var nav6 =$('.fa');
 	console.log("hi");
   var btn = $('#goTopButton');
 	$(window).scroll(function () {
@@ -16,12 +17,14 @@ $("document").ready(function($){
       nav3.addClass("upperMenuNew")
       nav4.addClass("badgeNew")
 			nav5.addClass("logoNew")
+			nav6.addClass("faNew");
 		} else {
 			nav.removeClass("headerNew")
       nav.removeClass("contentContainerNew")
       nav3.removeClass("upperMenuNew")
       nav4.removeClass("badgeNew")
 			nav5.removeClass("logoNew")
+			nav6.removeClass("faNew");
 		}
     if($(this).scrollTop() > 100){
           $('#goTopButton').fadeIn();
@@ -33,6 +36,12 @@ $("document").ready(function($){
     e.preventDefault();
     $('html, body').animate({scrollTop:0}, 800)
   });
+
+  $(".toContacts").on('click',function(e){
+	e.preventDefault();
+	var top = $('#contactsStart').offset().top;
+	$('html, body').animate({scrollTop:top}, 800)
+  })
 
 });
 
@@ -58,52 +67,77 @@ function loadCard(){
 
 function showCard()
 {
-	$.getJSON('goods.json',function(data){
-		var out = '';
-		if(Object.keys(card).length == 0){
-			out+='<div class="emptyCard">';
-			out+='<p>Корзина пустая</p>';
-			out+='</div>';
-			$('.cardList').html(out);
-		}
-		else{
-		var goods = data;
-		var sum = 0;
-		for(var id in card){
-			out+=`<div class ="cardItem">`;
-			out+='<div class="itemImgCard">';
-			out+=`<img src="Accets/Img/${goods[id].img}">`;
-			out+='</div>';
-			out+='<div class ="ItemNameCard">';
-			out+='</div>';
-            out+='<div class ="ItemAmountInfo">';
-			out+='<p>'+goods[id].name+'</p>';
-			out+='<p>'+card[id]*goods[id].cost+' Грн</p>';
-            out+='</div>'
-            out+='<div class ="ItemButtons">';
-			out+=`<button onclick="incrShopCard()" data-id ="${id}" class="add-to-card"><i class="fas fa-plus"></i></button>`;
-			out+=`<p>${card[id]}</p>`;
-			out+=`<button onclick="decrShopCard()" data-id ="${id}" class ="delete-one-from-card"><i class="fas fa-minus"></i></button>`;
-			sum+=card[id]*goods[id].cost;
-			out+=`<button data-id ="${id}" class ="delete-from-card"><i class="fas fa-trash"></i></button>`;
-			out+='</div>';
-			out+='</div>';
-		}
-		out+='<div class="sum">';
-		out+='<p>Итого: '
-		out+='<div class ="sumNum">'
-		out+='<p>'+ sum +' ГРН</p>';
+	var out = '';
+	if(Object.keys(card).length == 0){
+		out+='<div class="emptyCard">';
+		out+='<p>Корзина пустая</p>';
 		out+='</div>';
-		out+='</div>';
-        out+='<div>';
-        out+='<button onclick="confirmOrder()" class="ConfirmOrder">Оформить заказ</button>';
-        out+='</div>';
 		$('.cardList').html(out);
-		$('.add-to-card').on('click', addToCardFromCard);
-		$('.delete-one-from-card').on('click', deleteOneFromCard);
-		$('.delete-from-card').on('click', deleteFromCard);
 	}
+	else{
+	var sum = 0;
+	var goods, goods2, goods3, goods4, goods5, outgoods;
+	$.getJSON('goods2.json',function(data2){
+		goods2= data2;	
 	});
+	$.getJSON('goods3.json',function(data3){
+		goods3= data3;	
+	});
+	$.getJSON('goods4.json',function(data4){
+		goods4= data4;
+	});
+	$.getJSON('goods5.json',function(data5){
+		goods5= data5;
+	});
+
+			$.getJSON('goods.json',function(data1){
+				goods = data1;
+			for(var id in card){
+				if(id<1000){
+					outgoods=goods;
+				}else if(id>=1000 && id<2000){
+					outgoods=goods2;
+				}else if(id>=2000 && id<3000){
+					outgoods=goods3;
+				}
+				else if(id>=3000 && id<4000){
+					outgoods=goods4;
+				}else{
+					outgoods=goods5;
+				}
+				out+=`<div class ="cardItem">`;
+					out+='<div class="itemImgCard">';
+					out+=`<img src="Accets/Img/${outgoods[id].img}">`;
+					out+='</div>';
+					out+='<div class ="ItemAmountInfo">';
+					out+='<p>'+outgoods[id].name+'</p>';
+					out+='<p>'+card[id]*outgoods[id].cost+' Грн</p>';
+					out+='</div>'
+					out+='<div class ="ItemButtons">';
+					out+=`<button onclick="incrShopCard()" data-id ="${id}" class="add-to-card"><i class="fas fa-plus"></i></button>`;
+					out+=`<p>${card[id]}</p>`;
+					out+=`<button onclick="decrShopCard()" data-id ="${id}" class ="delete-one-from-card"><i class="fas fa-minus"></i></button>`;
+					sum+=card[id]*outgoods[id].cost;
+					out+=`<button data-id ="${id}" class ="delete-from-card"><i class="fas fa-trash"></i></button>`;
+					out+='</div>';
+					out+='</div>';
+			}
+			out+='<div class="sum">';
+			out+='<p>Итого: '
+			out+='<div class ="sumNum">'
+			out+='<p>'+ sum +' ГРН</p>';
+			out+='</div>';
+			out+='</div>';
+        	out+='<div>';
+        	out+='<button onclick="confirmOrder()" class="ConfirmOrder">Оформить заказ</button>';
+        	out+='</div>';
+			$('.cardList').html(out);
+			$('.add-to-card').on('click', addToCardFromCard);
+			$('.delete-one-from-card').on('click', deleteOneFromCard);
+			$('.delete-from-card').on('click', deleteFromCard);
+		});
+
+	}
 }
 
 function confirmOrder(){
@@ -139,7 +173,6 @@ function confirmOrder(){
 }
 
 function sendEmail(){
-	console.log('11');
 	var email = $('#email').val();
 	var eFIO = $('#eFIO').val();
 	var eNUM = $('#eNum').val();
