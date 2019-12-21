@@ -55,6 +55,7 @@ $("document").ready(function($){
   $(".toContacts").on('click',function(e){
 	e.preventDefault();
 	var top = $('#contactsStart').offset().top;
+	top -= 50;
 	$('html, body').animate({scrollTop:top}, 800)
   })
 
