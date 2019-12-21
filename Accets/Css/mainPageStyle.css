@@ -181,7 +181,7 @@
     width: 100%;
     background: url(../Img/startB.jpg) no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 95vh;
     position:relative;
     overflow: hidden;
   }
@@ -196,7 +196,6 @@
     padding:25px;
     border-radius: 10px;
     top:40%;
-    left:7.5% !important;
   }
 
   .mainMenu2{
