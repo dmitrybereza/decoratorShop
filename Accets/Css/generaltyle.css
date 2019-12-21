@@ -305,6 +305,12 @@ a{
     line-height: 100px;
   }
 
+  .showMenuButton {
+    position: absolute;
+    right: 0;
+    font-size: 2.5em;
+}
+
   .badge{
     padding-left: 14px;
     padding-right: 14px;
@@ -334,7 +340,22 @@ a{
     padding:20px 0;
     text-align: center;
   }
+  .card p {
+    margin-top: -15px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    max-height: 0;
+    opacity: 0;
+    transition: .4s linear;
+  }
+  .card-phone p {
+    margin-top: -5px;
+  }
 
+  .card-map p {
+    margin-top: -5px;
+    letter-spacing: 0.5px;
+  }
 
   #chk:checked ~ .upperMenu{
     right:0;
@@ -344,21 +365,22 @@ a{
     top:40px;
     right:80px;
     color:white;
-    font-size:4em;
+    font-size:2.5em;
   }
 
   .upperMenu ul {
     text-align: right;
     height: 100vh;
     margin-left: 8%;
-    line-height: 100px;
+    margin-top: 7%;
+    line-height: 80px;
     justify-content: center;
     padding-top: 0;
 }
   .upperMenu a {
     display: block;
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     padding-top: 5%;
 }
 
@@ -368,7 +390,7 @@ a{
 
 }
 
-@media screen and (max-aspect-ratio: 13/9) {
+@media screen and (max-aspect-ratio: 13/9) and (min-width:875px) {
   .header{
     height: 120px;
     padding-top: 50px;
@@ -381,6 +403,24 @@ a{
   .showMenuButton, .hideMenuButton{
     display:block;
   }
+
+  .card p {
+    margin-top: 5px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    max-height: 0;
+    opacity: 0;
+    transition: .4s linear;
+  }
+  .card-phone p {
+    margin-top: 5px;
+  }
+
+  .card-map p {
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+  }
+
 
   .upperMenu{
     position: fixed;

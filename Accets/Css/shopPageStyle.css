@@ -86,7 +86,23 @@
   opacity: 1;
 }
 
-@media screen and (max-aspect-ratio: 13/9) {
+@media screen and (min-aspect-ratio: 23/9) {
+  .itemDesc {
+    position: absolute;
+    top: 7.4%;
+    height: 75.1%;
+    width: 85.2%;
+    font-size: 1.7em;
+    left: 7.4%;
+    overflow: auto;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgb(31, 31, 31, 0.8);
+  }
+}
+
+
+@media screen and (max-aspect-ratio: 13/9)  {
 .itemShop{
   width: calc(100% - 50px);
   margin-top: 30px;
@@ -128,7 +144,7 @@
   top: 10.4%;
   height: 69.4%;
   width: 85.2%;
-  font-size: 2.8em;
+  font-size: 2.1em;
   left: 7.4%;
   overflow: auto;
   opacity: 0;

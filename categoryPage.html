@@ -21,9 +21,9 @@
         </label>
       <div class="upperMenu">
         <ul>
-            <a href="index.html">Главная</a></li>
+            <a href="index.html">Главная</a></li> 
             <a href="portfolioPage.html">Портфолио</a></li>
-            <a href="categoryPage.html">Каталог</a></li>
+            <a href="categoryPage.html">Магазин</a></li>
             <a class="toContacts" href="#contactsStart">Контакты</a></li>
             <input type="checkbox" id="chk">
         <label for="chk" class="hideMenuButton">
@@ -38,29 +38,28 @@
     <div class="contentContainer">
       <div class="content">
         <div class="categoryList">
-              <div class="category decPlaster">
+              <div onclick="decPlasterClick()" class="category decPlaster">
                 <a href="shopPage.html">
-                    <button onclick="decPlasterClick()">dafsdf</button>
+                    <div class="categoryName">
+                      <p> Декоративные штукатурки</p>
+                    </div>
+                    <img src="Accets/Img/plaster.jpg" alt="">
                   </a>
                 </div>
-              <div class="category marmorino">
+              <div onclick="varnishClick()" class="category varnish">
                   <a href="shopPage.html">
-                      <button onclick="marmorinoClick()">dafsdf</button>
+                    <div class="categoryName">
+                        <p>Лаки</p>
+                    </div>  
+                     <img src="Accets/Img/varnish.jpg" alt="">
                     </a>
                 </div>
-              <div class="category varnish">
+              <div onclick="paintClick()" class="category paint">
                   <a href="shopPage.html">
-                     <button onclick="varnishClick()">dafsdf</button>
-                    </a>
-                </div>
-              <div class="category azure">
-                  <a href="shopPage.html">
-                      <button onclick="azureClick()">dafsdf</button>
-                    </a>
-                </div>
-              <div class="category paint">
-                  <a href="shopPage.html">
-                      <button onclick="paintClick()">dafsdf</button>
+                    <div class="categoryName"> 
+                        <p>Краски</p>
+                    </div>   
+                     <img src="Accets/Img/paint.jpg" alt="">
                     </a>
                 </div>
         </div>

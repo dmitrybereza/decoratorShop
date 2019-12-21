@@ -76,18 +76,12 @@ function showCard()
 	}
 	else{
 	var sum = 0;
-	var goods, goods2, goods3, goods4, goods5, outgoods;
+	var goods, goods2, goods3, outgoods;
 	$.getJSON('goods2.json',function(data2){
 		goods2= data2;	
 	});
 	$.getJSON('goods3.json',function(data3){
 		goods3= data3;	
-	});
-	$.getJSON('goods4.json',function(data4){
-		goods4= data4;
-	});
-	$.getJSON('goods5.json',function(data5){
-		goods5= data5;
 	});
 
 			$.getJSON('goods.json',function(data1){
@@ -99,11 +93,6 @@ function showCard()
 					outgoods=goods2;
 				}else if(id>=2000 && id<3000){
 					outgoods=goods3;
-				}
-				else if(id>=3000 && id<4000){
-					outgoods=goods4;
-				}else{
-					outgoods=goods5;
 				}
 				out+=`<div class ="cardItem">`;
 					out+='<div class="itemImgCard">';

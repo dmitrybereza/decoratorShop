@@ -10,15 +10,9 @@
 }
 
 .mainMenu2{
+  margin-top: 50px;
   display: flex;
    margin-left: 130px;
-}
-
-@media(max-width: 1100px){
-  .bigLogo {
-   
-    left: 20% !important;
-}
 }
 
 .Portfolio{
@@ -26,7 +20,10 @@
   width: calc(50% - 130px);
   position: relative;
   overflow: hidden;
-  margin: 30px;
+  margin-top: 60px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 65px;
 }
 
 .Portfolio a{
@@ -79,38 +76,27 @@
 
 .mainLogo{
   height: 100px;
+  width: 100%;
 }
 .bigLogo{
   position: absolute;
   background:rgb(31, 31, 31, 0.8);
-  padding:25px;
+  padding:25px; 
   border-radius: 10px;
   top:40%;
-  left:30%;
-}
-
-.About{
-  height: 400px;
-  overflow: hidden;
-  position: relative;
-  width: calc(50% - 130px);
-  margin: 30px;
-}
-
-.Furniture{
-  height: 400px;
-  position: relative;
-  overflow: hidden;
-  width: calc(50% - 130px);
-  margin: 30px;
+  width: 50%;
+  left:25%;
 }
 
 .Shop{
   height: 400px;
   position: relative;
-  margin: 30px;
   overflow: hidden;
   width: calc(50% - 130px);
+  margin-top: 60px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 65px;
 }
 
 .itemName{
@@ -129,10 +115,60 @@
   transform: scale(1.1);
 }
 
-@media screen and (max-aspect-ratio: 13/9){
+@media(max-width: 1100px){
+  .Shop {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    width: calc(50% - 80px);
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 65px;
+}
+.Portfolio {
+  height: 300px;
+  width: calc(50% - 80px);
+  position: relative;
+  overflow: hidden;
+  margin-top: 60px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 65px;
+}
+.mainMenu1 {
+  margin-top: 50px;
+  display: flex;
+  margin-left: 40px;
+}
+
+.arrowDown {
+  text-align: center;
+  left: 40%;
+  font-size: 3em;
+  position: absolute;
+  top: 80%;
+  cursor: pointer;
+  color: white;
+}
+
+.bigLogo {
+  position: absolute;
+  background: rgb(31, 31, 31, 0.8);
+  padding: 25px;
+  border-radius: 10px;
+  top: 40%;
+  width: 70%;
+  left: 15%;
+}
+
+}
+
+@media screen and (max-aspect-ratio: 13/9)  and (min-width:875px) {
   .mainMenu1{
     margin-top: 150px;
     display: block;
+    margin-bottom: 150px;
     margin-left: 15%;
   }
 
@@ -143,7 +179,7 @@
 
   .startImg{
     width: 100%;
-    background: url(../Img/start2.jpg) no-repeat;
+    background: url(../Img/startB.jpg) no-repeat;
     background-size: cover;
     height: 90vh;
     position:relative;

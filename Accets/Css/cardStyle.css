@@ -183,6 +183,9 @@
 
 @media screen and (max-aspect-ratio: 13/9){
 
+    .cardList{
+        margin-top: 200px !important;
+    }
     .cardItem img {
         max-width: 50%;
     }
