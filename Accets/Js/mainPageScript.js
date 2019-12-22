@@ -12,7 +12,7 @@ function openInNewTab(url){
 	win.focus();
 }
 
-$("document").ready(function($){
+$("document").ready(function(){
 	var nav = $('.header');
   var nav2 = $('.contentContainer');
   var nav3 = $('.upperMenu');
@@ -59,6 +59,20 @@ $("document").ready(function($){
 	$('html, body').animate({scrollTop:top}, 800)
   })
 
+  $('.portfolioList').magnificPopup({
+	delegate: 'a',
+	type: 'image',
+	tLoading: 'Loading image #%curr%...',
+	mainClass: 'mfp-img-mobile',
+	gallery: {
+		enabled: true,
+		navigateByImgClick: true,
+		preload: [0,1]
+	},
+	image: {
+		tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+	}
+	});
 });
 
 var startIndex;
